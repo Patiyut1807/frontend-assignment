@@ -2,7 +2,7 @@ import { create } from "zustand";
 import { User } from "@/interfaces/user";
 
 export interface TodoItem {
-  type: string; // department
+  type: string; 
   name: string;
 }
 
