@@ -1,10 +1,10 @@
-import { TodoItem } from "@/interfaces/todos/todo-item";
+import { TodoItem } from "@/interfaces/todo-item";
 import React from "react";
 interface TodoBtnProps {
   item: TodoItem;
   handleClick: () => void;
 }
-const TodoBtn = ({item,handleClick}:TodoBtnProps) => {
+const TodoBtn = ({ item, handleClick }: TodoBtnProps) => {
   return (
     <button
       className="p-2 border border-gray-200 hover:bg-gray-100 shadow-sm "

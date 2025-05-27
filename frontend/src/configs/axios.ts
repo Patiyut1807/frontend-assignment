@@ -1,6 +1,5 @@
 import { CONFIG } from "@/global-config";
 import axios from "axios";
-console.log(123,CONFIG.site.apiUrl);
 
 export const axiosInstance = axios.create({
   baseURL: CONFIG.site.apiUrl,

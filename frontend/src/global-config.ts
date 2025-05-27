@@ -8,6 +8,6 @@ export type ConfigValue = {
 export const CONFIG: ConfigValue = {
   env: process.env.NODE_ENV,
   site: {
-    apiUrl: process.env.API_HOST ?? "",
+    apiUrl: process.env.NEXT_PUBLIC_URL ?? "",
   },
 };

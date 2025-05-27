@@ -1,5 +1,5 @@
 import TodoBtn from "@/components/Button/todo/TodoBtn";
-import { TodoItems } from "@/interfaces/todos/todo-item";
+import { TodoItems } from "@/interfaces/todo-item";
 import React from "react";
 interface Props {
   data: TodoItems;
@@ -7,11 +7,11 @@ interface Props {
 }
 const MainList = ({ data, handleClick }: Props) => {
   return (
-    <div className="flex flex-col gap-2 h-full flex-1 px-6">
+    <div className="flex flex-col gap-2 h-full flex-1 px-6 overflow-y-auto min-w-[200px]">
       {data.map((item, index) => (
         <TodoBtn
           key={index}
-          handleClick={()  => handleClick(index)}
+          handleClick={() => handleClick(index)}
           item={item}
         />
       ))}
